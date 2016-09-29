@@ -1,0 +1,31 @@
+{
+    "name": "todolist_api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node src/server.js",
+        "pretest": "node src/server.js > /dev/null 2>&1 &",
+        "test": "node_modules/jasmine-node/bin/jasmine-node test/integration/server_spec.js",
+        "unit": "mocha --opts test/unit/mocha.opts test/unit/**_spec.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.13.3",
+        "chai": "^3.5.0",
+        "express": "^4.13.3",
+        "frisby":"latest",
+        "jasmine-node":"latest",
+        "joi": "^9.0.4",
+        "mocha": "^3.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pedrro/todoListApi.git"
+    },
+    "author": "@pedrro",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pedrro/todoListApi/issues"
+    },
+    "homepage": "https://github.com/pedrro/todoListApi#readme"
+}
